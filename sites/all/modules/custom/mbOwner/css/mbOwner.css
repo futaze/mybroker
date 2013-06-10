@@ -1,0 +1,24 @@
+.help{
+	margin-left:15px;
+}
+
+.tooltip-inner {
+  text-align: left !important;
+  font-size:14px;
+  max-width: 300px !important;
+}
+
+fieldset .fieldset-legend{
+	color:#1D95CB;
+	font-size:21px;
+}
+
+.grippie{
+	float:left;
+	width:500px;
+}
+
+textarea{
+	float:left !important;
+	width:500px !important;
+}

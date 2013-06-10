@@ -1,0 +1,34 @@
+<?php
+/**
+ * Implements hook_form_menu().
+ */
+function mbOwner_menu()
+{
+	$items = array();
+
+	$items['space/new'] = array(
+		'title' => 'List Your Space',
+		'description' => 'Submit your post and get users',
+		'page callback' => 'mbOwner_new_space_page',
+		'access arguments' => array('access new space page'),
+		'file' => 'includes/owner.space.inc',
+	);
+
+	return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mbOwner_theme()
+{
+    $themes = array();
+
+    $themes['mbOwnerNewSpace'] = array(
+        'variables' => array('params' => array()),
+        'template'  => 'templates/mbOwnerNewSpace',
+    );
+
+	return $themes;
+}
+

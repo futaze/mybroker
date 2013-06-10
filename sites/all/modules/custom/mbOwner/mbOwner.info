@@ -1,0 +1,5 @@
+name = mbOwner
+description = Responsible for owner features
+package = My Broker
+core = 7.x
+version = VERSION
