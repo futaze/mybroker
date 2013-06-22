@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="MenuLinks" table="menu_links">
+    <id name="mlid" type="integer" column="mlid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="menuName" type="string" column="menu_name" length="32" nullable="false"/>
+    <field name="plid" type="integer" column="plid" nullable="false"/>
+    <field name="linkPath" type="string" column="link_path" length="255" nullable="false"/>
+    <field name="routerPath" type="string" column="router_path" length="255" nullable="false"/>
+    <field name="linkTitle" type="string" column="link_title" length="255" nullable="false"/>
+    <field name="options" type="blob" column="options" nullable="true"/>
+    <field name="module" type="string" column="module" length="255" nullable="false"/>
+    <field name="hidden" type="smallint" column="hidden" nullable="false"/>
+    <field name="external" type="smallint" column="external" nullable="false"/>
+    <field name="hasChildren" type="smallint" column="has_children" nullable="false"/>
+    <field name="expanded" type="smallint" column="expanded" nullable="false"/>
+    <field name="weight" type="integer" column="weight" nullable="false"/>
+    <field name="depth" type="smallint" column="depth" nullable="false"/>
+    <field name="customized" type="smallint" column="customized" nullable="false"/>
+    <field name="p1" type="integer" column="p1" nullable="false"/>
+    <field name="p2" type="integer" column="p2" nullable="false"/>
+    <field name="p3" type="integer" column="p3" nullable="false"/>
+    <field name="p4" type="integer" column="p4" nullable="false"/>
+    <field name="p5" type="integer" column="p5" nullable="false"/>
+    <field name="p6" type="integer" column="p6" nullable="false"/>
+    <field name="p7" type="integer" column="p7" nullable="false"/>
+    <field name="p8" type="integer" column="p8" nullable="false"/>
+    <field name="p9" type="integer" column="p9" nullable="false"/>
+    <field name="updated" type="smallint" column="updated" nullable="false"/>
+  </entity>
+</doctrine-mapping>

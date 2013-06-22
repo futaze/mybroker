@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="RdfMapping" table="rdf_mapping">
+    <id name="type" type="string" column="type" length="128"/>
+    <id name="bundle" type="string" column="bundle" length="128"/>
+    <field name="mapping" type="blob" column="mapping" nullable="true"/>
+  </entity>
+</doctrine-mapping>

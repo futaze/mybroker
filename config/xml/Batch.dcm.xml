@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Batch" table="batch">
+    <id name="bid" type="integer" column="bid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="token" type="string" column="token" length="64" nullable="false"/>
+    <field name="timestamp" type="integer" column="timestamp" nullable="false"/>
+    <field name="batch" type="blob" column="batch" nullable="true"/>
+  </entity>
+</doctrine-mapping>

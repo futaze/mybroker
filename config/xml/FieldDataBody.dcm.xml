@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="FieldDataBody" table="field_data_body">
+    <id name="entityType" type="string" column="entity_type" length="128"/>
+    <id name="entityId" type="integer" column="entity_id"/>
+    <id name="deleted" type="boolean" column="deleted"/>
+    <id name="delta" type="integer" column="delta"/>
+    <id name="language" type="string" column="language" length="32"/>
+    <field name="bundle" type="string" column="bundle" length="128" nullable="false"/>
+    <field name="revisionId" type="integer" column="revision_id" nullable="true"/>
+    <field name="bodyValue" type="text" column="body_value" nullable="true"/>
+    <field name="bodySummary" type="text" column="body_summary" nullable="true"/>
+    <field name="bodyFormat" type="string" column="body_format" length="255" nullable="true"/>
+  </entity>
+</doctrine-mapping>

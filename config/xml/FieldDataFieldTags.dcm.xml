@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="FieldDataFieldTags" table="field_data_field_tags">
+    <id name="entityType" type="string" column="entity_type" length="128"/>
+    <id name="entityId" type="integer" column="entity_id"/>
+    <id name="deleted" type="boolean" column="deleted"/>
+    <id name="delta" type="integer" column="delta"/>
+    <id name="language" type="string" column="language" length="32"/>
+    <field name="bundle" type="string" column="bundle" length="128" nullable="false"/>
+    <field name="revisionId" type="integer" column="revision_id" nullable="true"/>
+    <field name="fieldTagsTid" type="integer" column="field_tags_tid" nullable="true"/>
+  </entity>
+</doctrine-mapping>

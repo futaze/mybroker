@@ -1,24 +1,9 @@
-.help{
-	margin-left:15px;
+.onwer-space-form-wrapper h4{
+    border-bottom: 1px solid #C6C6C6;
+    color: #59595C;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    padding: 30px;
 }
 
-.tooltip-inner {
-  text-align: left !important;
-  font-size:14px;
-  max-width: 300px !important;
-}
-
-fieldset .fieldset-legend{
-	color:#1D95CB;
-	font-size:21px;
-}
-
-.grippie{
-	float:left;
-	width:500px;
-}
-
-textarea{
-	float:left !important;
-	width:500px !important;
-}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="TaxonomyVocabulary" table="taxonomy_vocabulary">
+    <id name="vid" type="integer" column="vid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="255" nullable="false"/>
+    <field name="machineName" type="string" column="machine_name" length="255" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="true"/>
+    <field name="hierarchy" type="boolean" column="hierarchy" nullable="false"/>
+    <field name="module" type="string" column="module" length="255" nullable="false"/>
+    <field name="weight" type="integer" column="weight" nullable="false"/>
+  </entity>
+</doctrine-mapping>

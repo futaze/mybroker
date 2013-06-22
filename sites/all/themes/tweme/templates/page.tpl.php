@@ -39,17 +39,22 @@
 <?php endif ?>
 
 <?php if ($preface): ?>
-<!-- Header -->
+<!-- Header
 <header id="header" class="container-wrapper">
   <div class="container">
     <?php print $preface ?>
   </div>
 </header>
 <?php endif ?>
-
+-->
 <!-- Main -->
 <div id="main">
   <div class="container">
+	<div class="header">
+		<div class="page-header-wrapper">
+			<h2><?php print $title; ?></h2>
+		</div>
+	</div>
     <?php print $messages ?>
     <div class="row row-toggle">
       <?php if ($has_sidebar_first): ?>

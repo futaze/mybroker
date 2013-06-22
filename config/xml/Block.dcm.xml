@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Block" table="block">
+    <id name="bid" type="integer" column="bid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="module" type="string" column="module" length="64" nullable="false"/>
+    <field name="delta" type="string" column="delta" length="32" nullable="false"/>
+    <field name="theme" type="string" column="theme" length="64" nullable="false"/>
+    <field name="status" type="boolean" column="status" nullable="false"/>
+    <field name="weight" type="integer" column="weight" nullable="false"/>
+    <field name="region" type="string" column="region" length="64" nullable="false"/>
+    <field name="custom" type="boolean" column="custom" nullable="false"/>
+    <field name="visibility" type="boolean" column="visibility" nullable="false"/>
+    <field name="pages" type="text" column="pages" nullable="false"/>
+    <field name="title" type="string" column="title" length="64" nullable="false"/>
+    <field name="cache" type="boolean" column="cache" nullable="false"/>
+  </entity>
+</doctrine-mapping>

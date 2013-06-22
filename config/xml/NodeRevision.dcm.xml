@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="NodeRevision" table="node_revision">
+    <id name="vid" type="integer" column="vid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nid" type="integer" column="nid" nullable="false"/>
+    <field name="uid" type="integer" column="uid" nullable="false"/>
+    <field name="title" type="string" column="title" length="255" nullable="false"/>
+    <field name="log" type="text" column="log" nullable="false"/>
+    <field name="timestamp" type="integer" column="timestamp" nullable="false"/>
+    <field name="status" type="integer" column="status" nullable="false"/>
+    <field name="comment" type="integer" column="comment" nullable="false"/>
+    <field name="promote" type="integer" column="promote" nullable="false"/>
+    <field name="sticky" type="integer" column="sticky" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="NodeType" table="node_type">
+    <id name="type" type="string" column="type" length="32">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="255" nullable="false"/>
+    <field name="base" type="string" column="base" length="255" nullable="false"/>
+    <field name="module" type="string" column="module" length="255" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="false"/>
+    <field name="help" type="text" column="help" nullable="false"/>
+    <field name="hasTitle" type="boolean" column="has_title" nullable="false"/>
+    <field name="titleLabel" type="string" column="title_label" length="255" nullable="false"/>
+    <field name="custom" type="boolean" column="custom" nullable="false"/>
+    <field name="modified" type="boolean" column="modified" nullable="false"/>
+    <field name="locked" type="boolean" column="locked" nullable="false"/>
+    <field name="disabled" type="boolean" column="disabled" nullable="false"/>
+    <field name="origType" type="string" column="orig_type" length="255" nullable="false"/>
+  </entity>
+</doctrine-mapping>

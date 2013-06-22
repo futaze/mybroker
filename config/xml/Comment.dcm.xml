@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Comment" table="comment">
+    <id name="cid" type="integer" column="cid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="pid" type="integer" column="pid" nullable="false"/>
+    <field name="nid" type="integer" column="nid" nullable="false"/>
+    <field name="uid" type="integer" column="uid" nullable="false"/>
+    <field name="subject" type="string" column="subject" length="64" nullable="false"/>
+    <field name="hostname" type="string" column="hostname" length="128" nullable="false"/>
+    <field name="created" type="integer" column="created" nullable="false"/>
+    <field name="changed" type="integer" column="changed" nullable="false"/>
+    <field name="status" type="boolean" column="status" nullable="false"/>
+    <field name="thread" type="string" column="thread" length="255" nullable="false"/>
+    <field name="name" type="string" column="name" length="60" nullable="true"/>
+    <field name="mail" type="string" column="mail" length="64" nullable="true"/>
+    <field name="homepage" type="string" column="homepage" length="255" nullable="true"/>
+    <field name="language" type="string" column="language" length="12" nullable="false"/>
+  </entity>
+</doctrine-mapping>

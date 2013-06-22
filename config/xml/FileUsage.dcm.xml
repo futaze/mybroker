@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="FileUsage" table="file_usage">
+    <id name="fid" type="integer" column="fid"/>
+    <id name="type" type="string" column="type" length="64"/>
+    <id name="id" type="integer" column="id"/>
+    <id name="module" type="string" column="module" length="255"/>
+    <field name="count" type="integer" column="count" nullable="false"/>
+  </entity>
+</doctrine-mapping>

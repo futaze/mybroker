@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Watchdog" table="watchdog">
+    <id name="wid" type="integer" column="wid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="uid" type="integer" column="uid" nullable="false"/>
+    <field name="type" type="string" column="type" length="64" nullable="false"/>
+    <field name="message" type="text" column="message" nullable="false"/>
+    <field name="variables" type="blob" column="variables" nullable="false"/>
+    <field name="severity" type="boolean" column="severity" nullable="false"/>
+    <field name="link" type="string" column="link" length="255" nullable="true"/>
+    <field name="location" type="text" column="location" nullable="false"/>
+    <field name="referer" type="text" column="referer" nullable="true"/>
+    <field name="hostname" type="string" column="hostname" length="128" nullable="false"/>
+    <field name="timestamp" type="integer" column="timestamp" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="FileManaged" table="file_managed">
+    <id name="fid" type="integer" column="fid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="uid" type="integer" column="uid" nullable="false"/>
+    <field name="filename" type="string" column="filename" length="255" nullable="false"/>
+    <field name="uri" type="string" column="uri" length="255" nullable="false"/>
+    <field name="filemime" type="string" column="filemime" length="255" nullable="false"/>
+    <field name="filesize" type="integer" column="filesize" nullable="false"/>
+    <field name="status" type="boolean" column="status" nullable="false"/>
+    <field name="timestamp" type="integer" column="timestamp" nullable="false"/>
+  </entity>
+</doctrine-mapping>

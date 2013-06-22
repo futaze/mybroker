@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="FieldConfig" table="field_config">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fieldName" type="string" column="field_name" length="32" nullable="false"/>
+    <field name="type" type="string" column="type" length="128" nullable="false"/>
+    <field name="module" type="string" column="module" length="128" nullable="false"/>
+    <field name="active" type="boolean" column="active" nullable="false"/>
+    <field name="storageType" type="string" column="storage_type" length="128" nullable="false"/>
+    <field name="storageModule" type="string" column="storage_module" length="128" nullable="false"/>
+    <field name="storageActive" type="boolean" column="storage_active" nullable="false"/>
+    <field name="locked" type="boolean" column="locked" nullable="false"/>
+    <field name="data" type="blob" column="data" nullable="false"/>
+    <field name="cardinality" type="boolean" column="cardinality" nullable="false"/>
+    <field name="translatable" type="boolean" column="translatable" nullable="false"/>
+    <field name="deleted" type="boolean" column="deleted" nullable="false"/>
+  </entity>
+</doctrine-mapping>

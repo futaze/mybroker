@@ -22,8 +22,10 @@
     <![endif]-->
   </head>
   <body class="<?php print $classes ?>"<?php print $attributes ?>>
+  <div id="global_container">
     <?php print $page_top ?>
     <?php print $page ?>
     <?php print $page_bottom ?>
+   </div>
   </body>
 </html>

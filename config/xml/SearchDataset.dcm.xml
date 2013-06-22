@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="SearchDataset" table="search_dataset">
+    <id name="sid" type="integer" column="sid"/>
+    <id name="type" type="string" column="type" length="16"/>
+    <field name="data" type="text" column="data" nullable="false"/>
+    <field name="reindex" type="integer" column="reindex" nullable="false"/>
+  </entity>
+</doctrine-mapping>

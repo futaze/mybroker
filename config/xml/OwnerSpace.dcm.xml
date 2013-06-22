@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="OwnerSpace" table="owner_space">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="250" nullable="false"/>
+    <field name="email" type="string" column="email" length="250" nullable="true"/>
+    <field name="phoneNumber" type="string" column="phone_number" length="100" nullable="true"/>
+    <field name="addressLine1" type="string" column="address_line_1" length="250" nullable="true"/>
+    <field name="addressLine2" type="string" column="address_line_2" length="250" nullable="true"/>
+    <field name="locality" type="string" column="locality" length="250" nullable="true"/>
+    <field name="bathrooms" type="smallint" column="bathrooms" nullable="true"/>
+    <field name="rentNegotiable" type="smallint" column="rent_negotiable" nullable="true"/>
+    <field name="landmark" type="string" column="landmark" length="250" nullable="true"/>
+    <field name="floorArea" type="float" column="floor_area" nullable="true"/>
+    <field name="floorPosition" type="integer" column="floor_position" nullable="true"/>
+    <field name="rent" type="float" column="rent" nullable="true"/>
+    <field name="bedrooms" type="integer" column="bedrooms" nullable="true"/>
+    <field name="description" type="text" column="description" nullable="true"/>
+    <many-to-one field="state" target-entity="SysState">
+      <join-columns>
+        <join-column name="state" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="city" target-entity="SysCity">
+      <join-columns>
+        <join-column name="city" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="spaceType" target-entity="SysSpaceType">
+      <join-columns>
+        <join-column name="space_type" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>
